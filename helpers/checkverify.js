@@ -3,6 +3,7 @@ const { CryptoDecryption } = require("../helpers/tokeneEcryption");
 const signUpschema = require("../models/signup");
 
 const ChecVerify = async (req, res, next) => {
+  console.log("verifying!!")
 
   let token = req.headers.authorization.split(" ")[1];
 
